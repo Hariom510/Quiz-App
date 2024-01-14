@@ -1,70 +1,63 @@
-# Getting Started with Create React App
+# Quiz App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Tech Stack Used: ReactJs
 
-## Available Scripts
+## Overview
 
-In the project directory, you can run:
+Welcome to my Quiz App!. It's a quiz application that allows users to test their knowledge on various topics through a timed quiz.
 
-### `npm start`
+### Approach to the Problem
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+1. **Start Page:** Created a start page where users enter their email. Implemented regex validation for email input.
+2. **Quiz Page:** 
+- Developed the main quiz page featuring a 30-minute countdown timer.
+- Included a section on the left with all question numbers.
+- Each question number indicates whether the user has visited or attempted that question.
+- Implemented different background colors for question numbers based on user activity.
+  - **Visited Questions:** Marked with a distinct background color.
+  - **Attempted Questions:** Highlighted with another background color.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Explanation regarding the color codes is available at the bottom of the quiz page for user reference.
 
-### `npm test`
+3. **Responsive Design:** Ensured the app is responsive to various screen sizes.
+4. **Report Page:** Displayed the final score, all questions, user answers, and correct answers. Added a "Try Again" button to restart the quiz.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Components
 
-### `npm run build`
+1. **Start Page:** Accepts the user's email and validates it.
+2. **Quiz Page:** Displays questions, options, and a countdown timer.
+3. **Report Page:** Shows the final score and detailed results.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Installation
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+1. Clone the repository: `git clone https://github.com/Hariom510/Quiz-App.git`
+2. Navigate to the project folder: `cd Quiz-App`
+3. Install dependencies: `npm install`
+4. Start the app: `npm start`
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Assumptions Made
 
-### `npm run eject`
+**API Limitation:**
+- Due to issues with the provided API, which responded with a status code 429 (Too Many Requests), indicating that the rate limit imposed by the API server was exceeded.
+- To overcome this limitation, the application stores the quiz results locally in the `QuizData.js` file present inside the src folder of Quiz-App.
+- The stored data in `QuizData.js` maintains the structure of the API, ensuring compatibility with the original intended functionality.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Challenges Faced
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+The main challenge was implementing the countdown timer, for which I referred to external resources on YouTube.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Live Demo
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+[Quiz App Live Demo](https://hariomquizapp.netlify.app/quiz)
 
-## Learn More
+### Video Preview
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+[Watch Video Preview](https://www.loom.com/share/ca190f001fdd4be687a1d2a5d4cce105?sid=05bd1626-39ad-485e-b773-0c9a449c4557)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Screenshots
 
-### Code Splitting
+![Screenshot (438)](https://github.com/Hariom510/Quiz-App/assets/85151795/b127005d-93b7-4105-94ca-8e9ef545efc4)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+![Screenshot (440)](https://github.com/Hariom510/Quiz-App/assets/85151795/b35e6620-1cd3-4e62-9dde-253c28030417)
 
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+![Screenshot (441)](https://github.com/Hariom510/Quiz-App/assets/85151795/df9c9ba6-db48-42f9-98dd-6af14766b4ec)
