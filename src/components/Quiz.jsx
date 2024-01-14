@@ -117,6 +117,11 @@ function Quiz() {
     setIsTimeUp(false);
   };
 
+//  API Limitation:-
+// - Due to issues with the provided API, which responded with a status code 429 (Too Many Requests), indicating that the rate limit imposed by the API server was exceeded.
+// - To overcome this limitation, the application stores the quiz results locally in the `QuizData.js` file present inside the src folder of Quiz-App.
+// - The stored data in `QuizData.js` maintains the structure of the API, ensuring compatibility with the original intended functionality.
+
   //   useEffect(() => {
   //     const getData = async () => {
   //       try {
