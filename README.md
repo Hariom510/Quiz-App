@@ -48,7 +48,7 @@ The main challenge was implementing the countdown timer, for which I referred to
 
 ### Live Demo
 
-[Quiz App Live Demo](https://hariomquizapp.netlify.app/quiz)
+[Quiz App Live Demo](https://hariomquizapp.netlify.app/)
 
 ### Video Preview
 
