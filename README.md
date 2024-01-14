@@ -30,7 +30,7 @@ Explanation regarding the color codes is available at the bottom of the quiz pag
 
 ### Installation
 
-1. Clone the repository: `git clone https://github.com/Hariom510/Quiz-App.git`
+1. Clone the repository: `[https://github.com/Hariom510/Quiz-App/](https://github.com/Hariom510/Quiz-App.git)`
 2. Navigate to the project folder: `cd Quiz-App`
 3. Install dependencies: `npm install`
 4. Start the app: `npm start`
